@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Application | NAIST Project for Interns 2019</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts : Header: Roboto, Body: Cabin -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700|Ubuntu:700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Cabin', serif;
+  color: #486591;
+  background-color:#ffffff
+}
+
+.main-caption {
+  display: table;
+  text-align: center;
+  padding-top: 18vh;
+  height: 100%;
+  width:100%;
+}
+
+.main-caption span.border {
+  display: inline-block;
+  background-color: #d6e6f3;
+  color: #486591;
+  /*font-size: 3vh;*/
+  /*color: #c55a11;*/
+  font-size: 5vmin;
+  padding: 5px;
+  /*letter-spacing: 10px;*/
+  font-family: 'Ubuntu', san-serif;
+}
+
+.bgimg-2 {
+  background-image:  
+  	/*linear-gradient(
+      rgba(214,230,243, 0.45), 
+      rgba(214,230,243, 0.45)
+    ),*/
+  	url("apply.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #c55a11;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #96c4de;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #d6e6f3;
+  text-decoration: none;
+}
+
+a.question-link:hover{
+  color: #c55a11;
+  text-decoration: none;
+}
+
+a.e-mail{
+  color:#c55a11;
+}
+
+a.e-mail:hover{
+  color: #96c4de;
+  text-decoration: none;
+}
+
+a.e-mail-b{
+  color:#c55a11;
+}
+
+a.e-mail-b:hover{
+  color: #d6e6f3;
+  text-decoration: none;
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #96c4de;
+  font-family: 'Ubuntu', san-serif;
+}
+
+a.navb-brand {
+  color: #486591;
+  font-weight: bold;
+}
+
+a.navb-brand:hover {
+  color: #c55a11;
+  font-weight: bold;
+}
+
+.navb-item {
+  color: #c55a11;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item{
+  color: #486591;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item:hover{
+  color: #c55a11;
+}
+
+.doc-table {
+  display: table;
+
+  width: 100%;
+}
+
+.step-header {
+  display: table;
+
+  width: 100%;
+
+  /*font-weight: bold;*/
+  color: #000000;
+
+  
+}
+
+.step-header > .num-cell, .detail-cell, .icon-cell {
+  display: table-cell;
+}
+
+.num-cell {
+  text-align: left;
+  color: #d6e6f3;
+
+  /* Top-left, top-right, bottom-right, bottom-left */
+  border-radius: calc(0.25rem - 1px) 0 0 calc(0.25rem - 1px);
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 0 0.75rem 1.25rem;
+}
+
+.detail-cell {
+  text-align: left;
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 0 0.75rem 0;
+  color: #486591;
+}
+
+.icon-cell {
+  text-align: right;
+
+  /* Top-left, top-right, bottom-right, bottom-left */
+  border-radius: 0 calc(0.25rem - 1px) calc(0.25rem - 1px) 0;
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 1.25rem 0.75rem 0;
+}
+
+.icon-cell a.file-icon{
+  color: #c55a11;
+}
+
+.icon-cell a.file-icon:hover{
+  color: #96c4de;
+}
+
+.main-step-bg {
+  background-color: #96c4de;
+}
+
+.sub-step-bg {
+  background-color: #d6e6f3;
+}
+
+.container-napi {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container-napi-nav {
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+
+@media (min-aspect-ratio: 3/1) {
+  .main-caption span.border {
+    font-size: 10vmin;
+  }
+}
+</style>
+
+<!--margin-bottom: 10px;
+
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) calc(0.25rem - 1px) calc(0.25rem - 1px); rgb(214,230,243, 0.4)-->
+
+<body>
+  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
+    <nav class="navbar navbar-toggleable-md" style="background: #ffffff; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #96c4de; color:#96c4de;
+">
+        <span class="fa fa-bars"></span>
+      </button>
+      <a class="navbar-brand navb-brand" href="index.html">NAIST Project for Interns 2019</a>
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <div class="navbar-nav justify-content-end" style="width: 100%;">
+          <a class="nav-item nav-link navb-item" href="#">Apply</a>
+          <a class="nav-item nav-link navb-item" href="labs.html">Labs</a>
+          <a class="nav-item nav-link navb-item" href="faq.html">FAQs</a>
+          <a class="nav-item nav-link navb-item" href="about.html">About</a>
+          <!--a class="nav-item nav-link navb-item" href="contact.html">Contact</a-->
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+<div class="bgimg-2">
+  <div class="container-napi" style="width: 100%;">
+  <div class="main-caption">
+      <div style="display: table-row; text-align: center;">
+        <span class="border">HOW TO APPLY</span>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div style="color: #486591;background-color:#ffffff;text-align:center;padding:50px 0px;text-align: justify;">
+  <div class = "container-napi" style="width: 100%;">
+    <div class="step-header main-step-bg"> <!-- Step 1 -->
+      <div class="num-cell" style="width: 5%;">1.</div>
+      <div class="detail-cell" style=" width: 90%;">Check <a class="e-mail-b" href="faq.html" target="_blank">here <i class="fa fa-external-link"></i></a> if you are eligible to apply.</div>
+      <!--<div class="icon-cell" style="width: 5%;"> <a class="e-mail-b" href="faq.html"><i class="fa fa-link"></i></a></div>-->
+      <!--fa fa-laptop  -->
+    </div>
+
+    <div class="step-header main-step-bg"> <!-- Step 2 -->
+      <div class="num-cell" style="width: 5%;">2.</div>
+      <div class="detail-cell" style=" width: 90%;">Choose a lab <a class="e-mail-b" href="labs.html" target="_blank">here <i class="fa fa-external-link"></i></a>.</div>
+      <!--<div class="icon-cell" style="width: 5%;"> <a class="e-mail-b" href="labs.html"><i class="fa fa-link"></i></a></div>-->
+      <!--fa fa-laptop  -->
+    </div>
+
+    <div class="step-header main-step-bg"> <!-- Step 3 -->
+      <div class="num-cell" style="width: 5%;">3.</div>
+      <div class="detail-cell" style=" width: 90%;">Accomplish the <a class="e-mail-b" href="http://bit.ly/2Kj2lBd" target="_blank">Recommender Information Form <i class="fa fa-external-link"></i></a> by 22 September 2018 (11:59 PHT).</div>
+      <!--https://docs.google.com/forms/d/e/1FAIpQLSfOP0UwCno4rLNsCGihGsNXp0QEwMoeIgLjCXHTr1fpqtDSWA/viewform-->
+      <!--<div class="icon-cell" style="width: 5%;"><a class="e-mail-b" href="https://docs.google.com/forms/d/e/1FAIpQLSfOP0UwCno4rLNsCGihGsNXp0QEwMoeIgLjCXHTr1fpqtDSWA/viewform" target="_blank"><i class="fa fa-link"></i></a></div>-->
+    </div>
+
+    <div class="step-header main-step-bg"> <!-- Step 4 -->
+      <div class="num-cell" style="width: 5%;">4.</div>
+      <div class="detail-cell" style=" width: 90%;">Gather the following:</div>
+      <div class="icon-cell" style="width: 5%;"><a href="files/[NAPI 2019] Application Package.zip"><i class="fa fa-file-zip-o"></i></a></div>
+    </div>
+
+    <div class="step-header"> <!-- Step 4.1 -->
+      <div class="num-cell" style="width: 5%;"></div>
+      <div class="num-cell sub-step-bg" style="width: 5%; color:#96c4de">☐</div>
+      <div class="detail-cell sub-step-bg" style="width: 85%; color: #486591;">Application Form [<i>not compatible with Preview of macOS</i>]</div>
+      <div class="icon-cell sub-step-bg" style="width: 5%;"><a class="file-icon" href="files/[NAPI 2019] Application Form.pdf" target="_blank"><i class="fa fa-file"></i></a></div>
+    </div>
+
+    <!--
+    <div class="step-header"> 
+      <div class="num-cell" style="width: 5%;"></div>
+      <div class="num-cell sub-step-bg" style="width: 5%; color:#96c4de">☐</div>
+      <div class="detail-cell sub-step-bg" style="width: 85%; color: #486591;">Recommendation Form</div>
+    </div>
+    -->
+
+    <div class="step-header"> <!-- Step 4.2 -->
+      <div class="num-cell" style="width: 5%;"></div>
+      <div class="num-cell sub-step-bg" style="width: 5%; color:#96c4de">☐</div>
+      <div class="detail-cell sub-step-bg" style="width: 85%; color: #486591;">CV Template</div>
+      <div class="icon-cell sub-step-bg" style="width: 5%;"><a class="file-icon" href="files/[NAPI 2019] Curriculum Vitae.docx"><i class="fa fa-file"></i></a></div>
+    </div>
+
+    <div class="step-header"> <!-- Step 4.3 -->
+      <div class="num-cell" style="width: 5%;"></div>
+      <div class="num-cell sub-step-bg" style="width: 5%; color:#96c4de">☐</div>
+      <div class="detail-cell sub-step-bg" style="width: 85%; color: #486591;">Scanned copy of passport</div>
+      <div class="icon-cell sub-step-bg" style="width: 5%;"></div>
+    </div>
+
+    <div class="step-header"> <!-- Step 4.4 -->
+      <div class="num-cell" style="width: 5%;"></div>
+      <div class="num-cell sub-step-bg" style="width: 5%; color:#96c4de">☐</div>
+      <div class="detail-cell sub-step-bg" style="width: 85%; color: #486591;">Scanned copy of Certificate of Enrollment/Graduation</div>
+      <div class="icon-cell sub-step-bg" style="width: 5%;"></div>
+    </div>
+
+    <div class="step-header main-step-bg"> <!-- Step 5 -->
+      <div class="num-cell" style="width: 5%;">5.</div>
+      <div class="detail-cell" style=" width: 90%;">Compile and check the reminders.</div>
+      <div class="icon-cell" style="width: 5%;"><a class="e-mail-b" href="files/[NAPI 2019] Application Reminders.pdf" target="_blank"><i class="fa fa-file"></i></a></div>
+    </div>
+
+    <div class="step-header main-step-bg"> <!-- Step 6 -->
+      <div class="num-cell" style="width: 5%;">6.</div>
+      <div class="detail-cell" style=" width: 90%;">Send to <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a> by 29 September 2018 (11:59 PHT).</div>
+      <div class="icon-cell" style="width: 5%;"></div>
+    </div>
+	</div> <!-- container -->
+</div>
+
+<div style="position:relative;background-color:#96c4de;" class="container-napi">
+  <div style="color:#486591;padding:40px 0 20px 0;text-align: left;">
+
+
+  <p> NAIST PROJECT FOR INTERNS 2019<br/>
+  
+  8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
+  Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
+  © NAPI 2019, All Rights Reserved.</p>
+
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
