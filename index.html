@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Home | NAIST Project for Interns 2020</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts : Header: Ubuntu, Body: Cabin -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700|Ubuntu:700" rel="stylesheet">
+
+    <!-- Alternative Fonts : Header: League Spartan, Body: Libre Baskerville -->
+    <link href="font_league/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+  <script type="text/javascript">
+   $(function() {
+    var images = ['home.jpg', 'home2.jpg'];
+    $('.bgimg-1').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
+  </script>
+
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Cabin', serif;
+  color: #486591;
+  background-color:#ffffff
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 .bgimg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("home.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image:  
+  	/*linear-gradient(
+      rgba(214,230,243, 0.45), 
+      rgba(214,230,243, 0.45)
+    ),*/
+  	url("home_about.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("contact.jpg");
+  min-height: 400px;
+}
+
+.main-caption {
+  display: table;
+  text-align: left;
+  padding-top: 25vh;
+  height: 100%;
+  width:100%;
+}
+
+.main-caption span.border {
+  display: inline-block;
+  /*background-color: #111;
+  color: #fff;
+  font-size: 3vh;*/
+  color: #486591;
+  font-size: 5vh;
+  padding: 10px;
+  /*letter-spacing: 10px;*/
+  margin-bottom: 15px;
+  font-family: 'Ubuntu', san-serif;
+}
+
+.main-caption a.border-button {
+  display: inline-block;
+  border: 3px solid #96c4de;
+  background-color: #486591;
+  padding: 10px;
+  font-size: 3vh;
+  /*letter-spacing: 10px;*/
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', san-serif;
+  color: #d6e6f3;
+  text-decoration: none;
+}
+
+.main-caption a.border-button:hover {
+  background-color: #d6e6f3;
+  color: #486591;
+  border: 3px solid #486591;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #486591;
+}
+
+.caption span.border {
+  display: inline-block;
+  background-color: #d6e6f3;
+  color: #486591;
+  /*font-size: 3vh;*/
+  /*color: #c55a11;*/
+  font-size: 5vmin;
+  padding: 5px;
+  /*letter-spacing: 10px;*/
+  font-family: 'Ubuntu', san-serif;
+}
+
+a {
+  color: #c55a11;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #96c4de;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #d6e6f3;
+  text-decoration: none;
+}
+
+a.question-link:hover{
+  color: #c55a11;
+  text-decoration: none;
+}
+
+a.e-mail{
+  color:#c55a11;
+}
+
+a.e-mail:hover{
+  color: #96c4de;
+  text-decoration: none;
+}
+
+a.e-mail-b{
+  color:#c55a11;
+}
+
+a.e-mail-b:hover{
+  color: #d6e6f3;
+  text-decoration: none;
+}
+
+
+h3 {
+  /*letter-spacing: 2px;*/
+  text-transform: uppercase;
+  font-weight: bold;
+  /*color: #96c4de;*/
+  font-family: 'Ubuntu', san-serif;
+}
+
+a.navb-brand {
+  color: #486591;
+  font-weight: bold;
+}
+
+a.navb-brand:hover {
+  color: #c55a11;
+  font-weight: bold;
+}
+
+.navb-item {
+  color: #c55a11;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item{
+  color: #486591;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item:hover{
+  color: #c55a11;
+}
+
+.container-napi {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container-napi a.button {
+  display: inline-block;
+  border: 3px solid #486591;
+  padding: 18px;
+  font-size: 3vh;
+  /*letter-spacing: 10px;*/
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', san-serif;
+  color: #486591;
+  text-decoration: none;
+  background-color: #d6e6f3;
+}
+
+.container-napi a.button:hover {
+  background-color: #96c4de;
+  color: #d6e6f3;
+}
+
+.container-napi a.icon-button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 3vh;
+  /*letter-spacing: 10px;*/
+  font-family: 'Ubuntu', san-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container-napi a.icon-button:hover {
+  background-color: #d6e6f3;
+  color: #486591;
+}
+
+.container-napi-nav {
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-aspect-ratio: 3/1) {
+  .caption span.border {
+    font-size: 5vmin;
+  }
+}
+
+.animate-fading{
+	animation:fading 10s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fading{
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
+    <!--<nav class="navbar navbar-toggleable-md" style="background: transparent; padding: 0.5rem 0;">-->
+    <nav class="navbar navbar-toggleable-md" style="background: #ffffff; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #96c4de; color:#96c4de;
+">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <a class="navbar-brand navb-brand" href="#">NAIST Project for Interns 2019</a>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <div class="navbar-nav justify-content-end" style="width: 100%;">
+            <!--Contact us at: <a href="mailto:napi@is.naist.jp">napi[@]is.naist.jp</a>-->
+            <a class="nav-item nav-link navb-item" href="apply.html">Apply</a>
+            <a class="nav-item nav-link navb-item" href="labs.html">Labs</a>
+            <a class="nav-item nav-link navb-item" href="faq.html">FAQs</a>
+            <a class="nav-item nav-link navb-item" href="about.html">About</a>
+            <!--a class="nav-item nav-link navb-item" href="contact.html">Contact</a-->
+          </div>
+        </div>
+    </nav>
+  </div>
+
+  <div class="bgimg-1">
+    <div class="container-napi">
+      <div class="main-caption">
+      <!--div style="display: table-row;">
+      <span class="border">RESULTS ARE OUT!</span>
+      </div>
+      <div style="display: table-row;">
+      <span class="border">RESULTS: MID OCTOBER 2017</span>
+      </div-->
+      <div style="display: table-row;">
+      <!--<span class="border">INTERNSHIP DATES: <br> 6-19 JANUARY 2019</span>-->
+      <span class="border" style="font-family: Permanent Marker; font-size: 10vh; letter-spacing: 10px;">DETAILS WILL <br> BE OUT SOON!</span>
+      </div>
+      <a class="border-button" href="apply.html">APPLY NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-napi">
+  <div style="color: #486591;background-color:#ffffff;padding:50px 0 50px 0;">
+    <h3 style="text-align:center;font-weight: bold;">WELCOME!</h3>
+    <p style="text-align:center;">Welcome to the NAIST Project for Interns 2019 page.</p>
+    <center>
+        <!--onmouseover="this.src='icons/apply_h.png'" onmouseout="this.src='icons/apply.png'"-->
+        <a class="icon-button" href=apply.html><img src="icons/apply.png" height="50"><br>APPLY</a> &emsp;&emsp;
+        <a class="icon-button" href=labs.html><img src="icons/labs.png" height="50"><br>LABS</a> &emsp;&emsp;
+        <a class="icon-button" href=faq.html><img src="icons/faq.png" height="50"><br>FAQs</a>
+    </center>
+  </div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border">ABOUT</span>
+  </div>
+</div>
+
+<div style="position:relative;" class="container-napi">
+  <div style="color:#486591;background-color:#ffffff;padding:40px 0 50px 0;text-align: left;">
+
+    <br>
+    <h3 style="font-weight: bold;">What is NAPI?</h3>
+
+    <p>The NAIST Project for Interns (NAPI) offers yearly internship opportunities for students coming from the Ateneo de Manila University's School of Science and Engineering (AdMU-SOSE) in the Philippines.</p>
+
+    <p><a class="e-mail" href="about.html"> Learn more <i class="fa fa-external-link"></i></a></p>
+    <br/>
+
+    <h3 style="font-weight: bold;">What is NAIST?</h3>
+
+    <p>The Nara Institute of Science and Technology (奈良先端科学技術大学院大学 | NAIST) is a school for graduate studies situated in the advanced technology research area of Osaka-Nara-Kyoto. 
+
+    <p><a class="e-mail" href="http://www.naist.jp/en/" target="_blank"> Learn more <i class="fa fa-external-link"></i></a></p>
+
+  </div>
+</div>
+
+
+
+
+<div style="position:relative;background-color:#96c4de;" class="container-napi">
+  <div style="color:#486591;padding:40px 0 20px 0;text-align: left;">
+
+
+  <p> NAIST PROJECT FOR INTERNS 2019<br/>
+  
+  8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
+  Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
+  © NAPI 2019, All Rights Reserved.</p>
+
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
