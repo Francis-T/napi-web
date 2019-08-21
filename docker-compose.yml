@@ -8,6 +8,7 @@ services:
     ports:
       - ${WEB_PORT}:80
     volumes:
+        - ./base:/usr/local/apache2/htdocs:z
         - ./napi2020:/usr/local/apache2/htdocs/napi2020:z # HTML-based website
     environment:
       VIRTUAL_HOST: ${HOST}
