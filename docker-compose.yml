@@ -13,7 +13,7 @@ services:
       VIRTUAL_HOST: ${HOST}
       VIRTUAL_PORT: ${WEB_PORT}
 
-networks:
-  default:
-    external:
-      name: ${NETWORK_NAME}
+      #networks:
+      #  default:
+      #    external:
+      #      name: ${NETWORK_NAME}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Participating Labs | NAIST Project for Interns 2022</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts : Header: Roboto, Body: Cabin -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700|Ubuntu:700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #486591;
+  background-color:#CCCEC3
+}
+
+.bgimg-2 {
+  background-image:  
+  	/*linear-gradient(
+      rgba(214,230,243, 0.45), 
+      rgba(214,230,243, 0.45)
+    ),*/
+  	url("labs.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-caption {
+  display: table;
+  text-align: center;
+  padding-top: 18vh;
+  height: 100%;
+  width: 100%;
+}
+
+.main-caption span.border {
+  display: inline-block;
+  background-color: #273747;
+  color: #C38A19;
+  /*font-size: 3vh;*/
+  /*color: #C38A19;*/
+  font-size: 7vmin;
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*letter-spacing: 10px;*/
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+#faq-accordion .faq-card {
+  margin-bottom: 20px;
+}
+
+.faq-card .faq-header {
+  display: table;
+  width: 100%;
+  background-color:#D4BB83
+}
+
+.faq-header .question-cell {
+  display: table-cell;
+  width: 95%;
+}
+
+.faq-header .question-link {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  color: #486591
+}
+
+.faq-header .arrow-cell {
+  display: table-cell;
+  width: 5%;
+}
+
+.faq-header .arrow-link {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+}
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.custom-text-large {
+   font-size: 110%;
+   text-align: left;
+}
+
+.custom-col-lab-name {
+   min-width: 250px;
+}
+
+table.table-hover tbody tr:hover {
+  background-color: #D4BB83;
+}
+
+table.table-hover a.file-icon:hover{
+  color: #4C6989;
+}
+
+a {
+  color: #C38A19;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #4C6989;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #D4BB83;
+  text-decoration: none;
+}
+
+a.question-link:hover{
+  color: #C38A19;
+  text-decoration: none;
+}
+
+a.e-mail{
+  color:#C38A19;
+}
+
+a.e-mail:hover{
+  color: #4C6989;
+  text-decoration: none;
+}
+
+a.e-mail-b{
+  color:#C38A19;
+}
+
+a.e-mail-b:hover{
+  color: #D4BB83;
+  text-decoration: none;
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4C6989;
+  font-family: 'Playfair Display', serif;
+}
+
+a.navb-brand {
+  color: #486591;
+  font-weight: bold;
+}
+
+a.navb-brand:hover {
+  color: #C38A19;
+  font-weight: bold;
+}
+
+.navb-item {
+  color: #C38A19;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item{
+  color: #486591;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item:hover{
+  color: #C38A19;
+}
+
+.container-napi {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container-napi-nav {
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+
+a.no-decor {
+  text-decoration: none;
+  color:#C38A19;
+}
+
+a.no-decor:hover{
+  color: #D4BB83;
+  text-decoration: none;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+
+@media (min-width:768px) {
+    .affix-top {
+      /* navbar style at top */
+      background:transparent;
+      border-color:transparent;
+      padding: 15px;
+      -webkit-transition:all 0.5s ease;
+      -moz-transition:all 0.5s ease; 
+      -o-transition:all 0.5s ease;         
+      transition:all 0.5s ease;  
+    }
+}
+
+@media (min-aspect-ratio: 3/1) {
+  .main-caption span.border {
+    font-size: 5vmin;
+  }
+}
+
+</style>
+
+
+<body>
+  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
+    <nav class="navbar navbar-toggleable-md" style="background: #CCCEC3; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #4C6989; color:#4C6989;
+">
+        <span class="fa fa-bars"></span>
+      </button>
+      <a class="navbar-brand navb-brand" href="index.html">NAIST Project for Interns 2022</a>
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <div class="navbar-nav justify-content-end" style="width: 100%;">
+          <a class="nav-item nav-link navb-item" href="apply.html">Apply</a>
+          <a class="nav-item nav-link navb-item" href="#">Labs</a>
+          <a class="nav-item nav-link navb-item" href="faq.html">FAQs</a>
+          <a class="nav-item nav-link navb-item" href="about.html">About</a>
+          <!--a class="nav-item nav-link navb-item" href="contact.html">Contact</a-->
+        </div>
+      </div>
+    </nav>
+  </div>
+   
+
+<section class="first">
+
+
+<div class="bgimg-2">
+  <div class="container-napi" style="width: 100%;">
+  <div class="main-caption" style="width: 100%;">
+      <div style="display: table-row; text-align: center;">
+        <span class="border">Participating Laboratories</span>
+        </div>
+      </div>
+  </div>
+  </div>
+
+<div style="color: #486591;background-color:#CCCEC3;text-align:center;padding:50px 0px;text-align: justify;">
+  <div class = "container-napi" style="width: 100%;">
+
+  <p>The Division of Information Science (Graduate School of Science and Technology) has three divisions. Click on the panels for more information, or click <a class="e-mail" href="apply.html">here <i class="fa fa-external-link"></i></a> to go back to the application page. </p>
+
+    <div id="faq-accordion" role="tablist">
+
+      <div class="card faq-card">
+        <div class="card-header faq-header" role="tab">
+          <div class="question-cell">
+            <a class="question-link" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse3">APPLIED INFORMATICS</a>
+          </div>
+          <div class="arrow-cell">
+            <a class="arrow-link e-mail" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse3"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <div id="collapse3" class="collapse show" role="tabpanel">
+          <div class="table-responsive" style="background-color:#CCCEC3">
+          <table align="left|center|left" class="table table-hover specialCollapse">
+              <thead>
+                <tr>
+                  <th class="custom-col-lab-name">Laboratory</th>
+                  <th class="col-sm-9">Theme</th>
+                </tr>
+              </thead>
+              <tbody class="custom-text-large">
+
+                <tr>
+                  <td>
+                    Computational Systems Biology<br>計算システムズ生物学<br/>
+                    <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/ai-06-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                    <a class="file-icon" href="files/[NAPI 2020] IS_CSB.pdf" target="_blank">[ Slides <i class="fa fa-file"></i> ]</a><br/>
+                  </td>
+                  <td>[1] Clustering of simple and bipartite graphs using DPClusSBO tool and some of its applications<br>
+                      [2] Identification of scoliosis based on breast x-ray images using deep learning</td>
+                </tr>
+                <tr>
+                  <td>
+                      Mathematical Informatics<br>数理情報学<br/>
+                      <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/ai-04-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                      <a class="file-icon" href="files/[NAPI 2020] IS_MI.pdf" target="_blank">[ Slides <i class="fa fa-file"> ]</i></a><br/>
+                  </td>
+                  <td>[1] Machine learning approach to spatial transcriptome analysis<br>
+                      [2] Neural architecture search based on graph structure</td>
+                </tr>
+                <tr>
+                  <td>
+                      Network Systems<br>ネットワークシステム学<br/>
+                      <a class="file-icon" href="https://isw3.naist.jp/Contents/Research/mi-03-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                      <a class="file-icon" href="files/[NAPI 2020] IS_MI.pdf" target="_blank">[ Slides <i class="fa fa-file"> ]</i></a><br/>
+                  </td>
+                  <td>[1] Intelligent reflecting surface for beyond 5G wireless communication system</td>
+                </tr>
+                <tr>
+                  <td>
+                      Optical Media Interface<br>光メディアインタフェース<br/>
+                      <a class="file-icon" href="https://isw3.naist.jp/Contents/Research/mi-06-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                      <a class="file-icon" href="files/[NAPI 2020] IS_MI.pdf" target="_blank">[ Slides <i class="fa fa-file"> ]</i></a><br/>
+                  </td>
+                  <td>[1] Deep learning meets physics for image defogging</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="card faq-card">
+        <div class="card-header faq-header" role="tab">
+          <div class="question-cell">
+            <a class="question-link" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse1">COMPUTER SCIENCE</a>
+          </div>
+          <div class="arrow-cell">
+            <a class="arrow-link e-mail" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse1"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <div id="collapse1" class="collapse show" role="tabpanel">
+          <div class="table-responsive" style="background-color:#CCCEC3">
+            <table align="left|center|left" class="table table-hover specialCollapse">
+                <thead>
+                  <tr>
+                    <th class="custom-col-lab-name">Laboratory</th>
+                    <th class="col-sm-9">Theme</th>
+                  </tr>
+                </thead>
+                <tbody class="custom-text-large">
+                  <tr>
+                    <td>
+                        Dependable System<br>ディペンダブルシステム学<br/>
+                        <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/cs-02-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                        <a class="file-icon" href="files/[NAPI 2020] IS_DS.pdf" target="_blank">[ Slides <i class="fa fa-file"> ]</i></a>
+                    </td>
+                    <td> [1] Population protocols toward nano-scale distributed systems</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        Ubiquitous Computing Systems<br>ユビキタスコンピューティングシステム<br/>
+                        <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/cs-03-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                        <a class="file-icon" href="files/[NAPI 2020] IS_UCS.pdf" target="_blank">[ Slides <i class="fa fa-file"></i> ]</a><br/>
+                    </td>
+                    <td>[1] Analyzing road network graphs to generate socially optimal routes <br>
+					    [2] Crowdedness estimation of public spaces using BLE signals from personal devices </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card faq-card">
+        <div class="card-header faq-header" role="tab">
+          <div class="question-cell">
+            <a class="question-link" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse2">MEDIA INFORMATICS</a>
+          </div>
+          <div class="arrow-cell">
+            <a class="arrow-link e-mail" data-toggle="collapse" data-parent="#faq-accordion" href="#collapse2"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <div id="collapse2" class="collapse show" role="tabpanel">
+          <div class="table-responsive" style="background-color:#CCCEC3">
+          <table align="left|center|left" class="table table-hover specialCollapse">
+              <thead>
+                <tr>
+                  <th class="custom-col-lab-name">Laboratory</th>
+                  <th class="col-sm-9">Theme</th>
+                </tr>
+              </thead>
+              <tbody class="custom-text-large">
+                <tr>
+                  <td>
+                      Social Computing<br>ソーシャルコンピューティング<br/>
+                      <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/mi-08-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                      <a class="file-icon" href="files/[NAPI 2020] IS_SC.pdf" target="_blank">[ Slides <i class="fa fa-file"></i> ]</a>
+                  </td>
+                  <td>[1] Health-related information extraction from social media<br>
+                      [2] Opinion mining of attitudes towards popular music on social media</td>
+                </tr>
+                <tr>
+                  <td>
+                    Interactive Media Design<br>インタラクティブメディア設計学<br/>
+                    <a class="file-icon" href="http://isw3.naist.jp/Contents/Research/mi-05-en.html" target="_blank">[ Website <i class="fa fa-link"></i> ]</a><br/>
+                    <a class="file-icon" href="files/[NAPI 2020] IS_IMD.pdf" target="_blank">[ Slides <i class="fa fa-file"></i> ]</a>
+                  </td>
+                  <td>[1] Implementation of a general-purpose industrial AR system for task support</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- faq-accordion -->
+  </div> <!-- container -->
+  </div>
+
+<div style="position:relative;background-color:#4C6989;" class="container-napi">
+  <div style="color:#273747;padding:40px 0 20px 0;text-align: left;">
+
+
+  <p> NAIST PROJECT FOR INTERNS 2020<br/>
+  
+  8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
+  Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
+  © NAPI 2020, All Rights Reserved.</p>
+
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
