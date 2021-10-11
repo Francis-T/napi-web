@@ -2,8 +2,10 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #486591;
-  background-color:#CCCEC3
+  /*color: #486591;*/
+  color: #313131;
+  /*background-color:#CCCEC3;*/
+  background-color: #FFF;
 }
 
 .main-caption {
@@ -12,8 +14,9 @@ html, body {
 
 .main-caption span.border {
   display: inline-block;
-  background-color: #273747;
-  color: #C38A19;
+  /*background-color : #273747;*/
+  background-color: #21B2C7; 
+  color: #FFF;
   /*font-size: 3vh;*/
   /*color: #C38A19;*/
   font-size: 7vmin;
@@ -21,7 +24,6 @@ html, body {
   padding-right: 15px;
   padding-left: 15px;
   /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
   font-weight: bold;
 }
 
@@ -32,10 +34,12 @@ html, body {
 .faq-card .faq-header {
   display: table;
   width: 100%;
-  background-color:#D4BB83
+  /*background-color:#D4BB83;*/
+  background-color: #21B2C7; 
 }
 
 .faq-header .question-cell {
+  color: #FFF;
   display: table-cell;
   width: 95%;
 }
@@ -45,7 +49,11 @@ html, body {
   text-decoration: none;
   text-align: left;
   font-weight: bold;
-  color: #486591
+  color: #FFF;
+}
+
+.faq-header .question-link:hover {
+  color: #D4BB83;
 }
 
 .faq-header .arrow-cell {
@@ -57,9 +65,14 @@ html, body {
   display: block;
   text-decoration: none;
   text-align: right;
+  color: #FFF;
 }
 
- .navbar.transparent.navbar-inverse .navbar-inner {
+.faq-header .arrow-link:hover {
+  color: #D4BB83;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
    background: rgba(0,0,0,0.4);
 }
 
@@ -73,7 +86,8 @@ html, body {
 }
 
 table.table-hover tbody tr:hover {
-  background-color: #D4BB83;
+  /*background-color: #D4BB83;*/
+  background-color: #C38A19;
 }
 
 table.table-hover a.file-icon:hover{
@@ -85,7 +99,6 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   color: #4C6989;
-  font-family: 'Playfair Display', serif;
 }
 
 a.navb-brand {
@@ -125,12 +138,45 @@ a.no-decor:hover{
 }
 
 .navbar {
-  background: #CCCEC3; 
+  background: #21B2C7; 
+}
+
+a.navb-brand {
+  color: #FFF;
+  font-weight: bold;
+}
+
+a.navb-brand:hover {
+  color: #D4BB83;
+  font-weight: bold;
+}
+
+.navb-item {
+  color: #C38A19;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item{
+  color: #FFF;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item:hover{
+  color: #D4BB83;
+}
+
+.table-responsive {
+  /*background-color: #FFFEF3;*/
+  background-color: #FFFFFF;
 }
 
 .section-content {
-  color: #486591;
-  background-color:#CCCEC3;
+  color: #313131;
+  /*background-color:#CCCEC3;*/
+  /*background-color: #FFFEF3;*/
+  background-color: #FFFFFF;
   text-align:center;
   padding:50px 0px;
   text-align: justify;

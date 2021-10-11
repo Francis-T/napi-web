@@ -31,11 +31,9 @@
 
 .num-cell {
   text-align: left;
-  color: #C38A19;
-
+  color: #FFF;
   /* Top-left, top-right, bottom-right, bottom-left */
-  border-radius: calc(0.25rem - 1px) 0 0 calc(0.25rem - 1px);
-
+  /*border-radius: calc(0.25rem - 1px) 0 0 calc(0.25rem - 1px);*/
   /* Top, right, bottom, left */
   padding: 0.75rem 0 0.75rem 1.25rem;
 }
@@ -45,7 +43,7 @@
 
   /* Top, right, bottom, left */
   padding: 0.75rem 0 0.75rem 0;
-  color: #D4BB83;
+  color: #FFF;
 }
 
 .detail-cell-alt {
@@ -58,20 +56,20 @@
 
 .icon-cell {
   text-align: right;
-
   /* Top-left, top-right, bottom-right, bottom-left */
-  border-radius: 0 calc(0.25rem - 1px) calc(0.25rem - 1px) 0;
-
+  /*border-radius: 0 calc(0.25rem - 1px) calc(0.25rem - 1px) 0;*/
   /* Top, right, bottom, left */
   padding: 0.75rem 1.25rem 0.75rem 0;
 }
 
 .icon-cell a.file-icon{
-  color: #C38A19;
+  /*color: #C38A19;*/
+  color: #0275D8;
 }
 
 .icon-cell a.file-icon:hover{
-  color: #4C6989;
+  /*color: #4C6989;*/
+  color:#C38A19;
 }
 
 .disabled-file-icon{
@@ -88,7 +86,7 @@
 }
 
 .main-step-bg {
-  background-color: #4C6989;
+  background-color: #21B2C7; 
 }
 
 .sub-step-bg {

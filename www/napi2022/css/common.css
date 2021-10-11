@@ -28,11 +28,12 @@ a.e-mail:hover{
 }
 
 a.e-mail-b{
-  color:#C38A19;
+  color:#0275D8;
 }
 
 a.e-mail-b:hover{
-  color: #D4BB83;
+  /*color: #D4BB83;*/
+  color:#C38A19;
   text-decoration: none;
 }
 
@@ -100,11 +101,11 @@ a.e-mail-b:hover{
 
 .container-footer {
   position:relative;
-  background-color:#4C6989;
+  background-color:#313131;
 }
 
 .footer-content {
-  color:#273747;
+  color:#FFF;
   padding:40px 0 20px 0;
   text-align: left;
 }
