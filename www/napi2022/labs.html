@@ -18,239 +18,18 @@
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/side-pages.css" rel="stylesheet">
+  <link href="css/labs.css" rel="stylesheet">
+
 </head>
 
-<style>
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #486591;
-  background-color:#CCCEC3
-}
-
-.bgimg-2 {
-  background-image:  
-  	/*linear-gradient(
-      rgba(214,230,243, 0.45), 
-      rgba(214,230,243, 0.45)
-    ),*/
-  	url("labs.jpg");
-  min-height: 400px;
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-caption {
-  display: table;
-  text-align: center;
-  padding-top: 18vh;
-  height: 100%;
-  width: 100%;
-}
-
-.main-caption span.border {
-  display: inline-block;
-  background-color: #273747;
-  color: #C38A19;
-  /*font-size: 3vh;*/
-  /*color: #C38A19;*/
-  font-size: 7vmin;
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-}
-
-#faq-accordion .faq-card {
-  margin-bottom: 20px;
-}
-
-.faq-card .faq-header {
-  display: table;
-  width: 100%;
-  background-color:#D4BB83
-}
-
-.faq-header .question-cell {
-  display: table-cell;
-  width: 95%;
-}
-
-.faq-header .question-link {
-  display: block;
-  text-decoration: none;
-  text-align: left;
-  font-weight: bold;
-  color: #486591
-}
-
-.faq-header .arrow-cell {
-  display: table-cell;
-  width: 5%;
-}
-
-.faq-header .arrow-link {
-  display: block;
-  text-decoration: none;
-  text-align: right;
-}
-
- .navbar.transparent.navbar-inverse .navbar-inner {
-   background: rgba(0,0,0,0.4);
-}
-
-.custom-text-large {
-   font-size: 110%;
-   text-align: left;
-}
-
-.custom-col-lab-name {
-   min-width: 250px;
-}
-
-table.table-hover tbody tr:hover {
-  background-color: #D4BB83;
-}
-
-table.table-hover a.file-icon:hover{
-  color: #4C6989;
-}
-
-.disabled-file-icon{
-  color: #666666;
-}
-
-a {
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a:visited{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-a.question-link:hover{
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a.e-mail{
-  color:#C38A19;
-}
-
-a.e-mail:hover{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a.e-mail-b{
-  color:#C38A19;
-}
-
-a.e-mail-b:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-h3 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #4C6989;
-  font-family: 'Playfair Display', serif;
-}
-
-a.navb-brand {
-  color: #486591;
-  font-weight: bold;
-}
-
-a.navb-brand:hover {
-  color: #C38A19;
-  font-weight: bold;
-}
-
-.navb-item {
-  color: #C38A19;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item{
-  color: #486591;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item:hover{
-  color: #C38A19;
-}
-
-.container-napi {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.container-napi-nav {
-  padding-left: 0vw;
-  padding-right: 0vw;
-}
-
-a.no-decor {
-  text-decoration: none;
-  color:#C38A19;
-}
-
-a.no-decor:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-
-@media (min-width:768px) {
-    .affix-top {
-      /* navbar style at top */
-      background:transparent;
-      border-color:transparent;
-      padding: 15px;
-      -webkit-transition:all 0.5s ease;
-      -moz-transition:all 0.5s ease; 
-      -o-transition:all 0.5s ease;         
-      transition:all 0.5s ease;  
-    }
-}
-
-@media (min-aspect-ratio: 3/1) {
-  .main-caption span.border {
-    font-size: 5vmin;
-  }
-}
-
-</style>
-
-
 <body>
-  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
-    <nav class="navbar navbar-toggleable-md" style="background: #CCCEC3; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #4C6989; color:#4C6989;
-">
+  <div class="container-napi-nav">
+    <nav class="navbar navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="fa fa-bars"></span>
       </button>
       <a class="navbar-brand navb-brand" href="index.html">NAIST Project for Interns 2022</a>
@@ -273,14 +52,14 @@ a.no-decor:hover{
 <div class="bgimg-2">
   <div class="container-napi" style="width: 100%;">
   <div class="main-caption" style="width: 100%;">
-      <div style="display: table-row; text-align: center;">
+      <div class="caption">
         <span class="border">Participating Laboratories</span>
         </div>
       </div>
   </div>
   </div>
 
-<div style="color: #486591;background-color:#CCCEC3;text-align:center;padding:50px 0px;text-align: justify;">
+<div class="section-content">
   <div class = "container-napi" style="width: 100%;">
 
   <p>The Division of Information Science (Graduate School of Science and Technology) has three divisions. Click on the panels for more information, or click <a class="e-mail" href="apply.html">here <i class="fa fa-external-link"></i></a> to go back to the application page. </p>
@@ -452,16 +231,15 @@ a.no-decor:hover{
   </div> <!-- container -->
   </div>
 
-<div style="position:relative;background-color:#4C6989;" class="container-napi">
-  <div style="color:#273747;padding:40px 0 20px 0;text-align: left;">
 
-
+<div class="container-napi container-footer">
+  <div class="footer-content">
   <p> NAIST PROJECT FOR INTERNS 2020<br/>
   
   8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
   Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
   © NAPI 2020, All Rights Reserved.</p>
-
+  </div>
 </div>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->

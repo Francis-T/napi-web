@@ -18,242 +18,21 @@
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/side-pages.css" rel="stylesheet">
+  <link href="css/apply.css" rel="stylesheet">
 </head>
-
-<style>
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #486591;
-  background-color:#CCCEC3
-}
-
-.main-caption {
-  display: table;
-  text-align: center;
-  padding-top: 18vh;
-  height: 100%;
-  width:100%;
-}
-
-.main-caption span.border {
-  display: inline-block;
-  background-color: #273747;
-  color: #C38A19;
-  /*font-size: 3vh;*/
-  /*color: #C38A19;*/
-  font-size: 7vmin;
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-}
-
-.bgimg-2 {
-  background-image:  
-  	/*linear-gradient(
-      rgba(214,230,243, 0.45), 
-      rgba(214,230,243, 0.45)
-    ),*/
-  	url("apply.jpg");
-  min-height: 400px;
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-a {
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a:visited{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-a.question-link:hover{
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a.e-mail{
-  color:#C38A19;
-}
-
-a.e-mail:hover{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a.e-mail-b{
-  color:#C38A19;
-}
-
-a.e-mail-b:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-h3 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #4C6989;
-  font-family: 'Playfair Display', serif;
-}
-
-a.navb-brand {
-  color: #486591;
-  font-weight: bold;
-}
-
-a.navb-brand:hover {
-  color: #C38A19;
-  font-weight: bold;
-}
-
-.navb-item {
-  color: #C38A19;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item{
-  color: #486591;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item:hover{
-  color: #C38A19;
-}
-
-.doc-table {
-  display: table;
-
-  width: 100%;
-}
-
-.step-header {
-  display: table;
-
-  width: 100%;
-
-  /*font-weight: bold;*/
-  color: #000000;
-
-  
-}
-
-.step-header > .num-cell, .detail-cell, .icon-cell {
-  display: table-cell;
-}
-
-.num-cell {
-  text-align: left;
-  color: #C38A19;
-
-  /* Top-left, top-right, bottom-right, bottom-left */
-  border-radius: calc(0.25rem - 1px) 0 0 calc(0.25rem - 1px);
-
-  /* Top, right, bottom, left */
-  padding: 0.75rem 0 0.75rem 1.25rem;
-}
-
-.detail-cell {
-  text-align: left;
-
-  /* Top, right, bottom, left */
-  padding: 0.75rem 0 0.75rem 0;
-  color: #D4BB83;
-}
-
-.detail-cell-alt {
-  text-align: left;
-
-  /* Top, right, bottom, left */
-  padding: 0.75rem 0 0.75rem 0;
-  color: #486591;
-}
-
-.icon-cell {
-  text-align: right;
-
-  /* Top-left, top-right, bottom-right, bottom-left */
-  border-radius: 0 calc(0.25rem - 1px) calc(0.25rem - 1px) 0;
-
-  /* Top, right, bottom, left */
-  padding: 0.75rem 1.25rem 0.75rem 0;
-}
-
-.icon-cell a.file-icon{
-  color: #C38A19;
-}
-
-.icon-cell a.file-icon:hover{
-  color: #4C6989;
-}
-
-.detail-cell-alt a.appform-file-link {
-  color: #C38A19;
-  font-weight: bold;
-}
-
-.detail-cell-alt a.appform-file-link:hover {
-  color: #4C6989;
-}
-
-.main-step-bg {
-  background-color: #4C6989;
-}
-
-.sub-step-bg {
-  background-color: #D4BB83;
-}
-
-.container-napi {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.container-napi-nav {
-  padding-left: 0vw;
-  padding-right: 0vw;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-
-@media (min-aspect-ratio: 3/1) {
-  .main-caption span.border {
-    font-size: 10vmin;
-  }
-}
-</style>
 
 <!--margin-bottom: 10px;
 
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) calc(0.25rem - 1px) calc(0.25rem - 1px); rgb(214,230,243, 0.4)-->
 
 <body>
-  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
-    <nav class="navbar navbar-toggleable-md" style="background: #CCCEC3; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #4C6989; color:#4C6989;
-">
+  <div class="container-napi-nav">
+    <nav class="navbar navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="fa fa-bars"></span>
       </button>
       <a class="navbar-brand navb-brand" href="index.html">NAIST Project for Interns 2022</a>
@@ -273,14 +52,14 @@ a.navb-item:hover{
 <div class="bgimg-2">
   <div class="container-napi" style="width: 100%;">
   <div class="main-caption">
-      <div style="display: table-row; text-align: center;">
+      <div class="caption">
         <span class="border">How to Apply</span>
       </div>
   </div>
   </div>
 </div>
 
-<div style="color: #486591;background-color:#CCCEC3;text-align:center;padding:50px 0px;text-align: justify;">
+<div class="section-content">
   <div class = "container-napi" style="width: 100%;">
     <div class="step-header main-step-bg"> <!-- Step 1 -->
       <div class="num-cell" style="width: 5%;">1.</div>
@@ -303,7 +82,9 @@ a.navb-item:hover{
 
     <div class="step-header main-step-bg"> <!-- Step 4 -->
       <div class="num-cell" style="width: 5%;">4.</div>
-      <div class="detail-cell" style=" width: 90%;">Gather the following:</div>
+      <div class="detail-cell" style=" width: 90%;">Gather the following: 
+          <a href="files/[NAPI 2022] Application Package.zip">[ Download All <i class="fa fa-download"></i> ]</a>
+      </div>
       <div class="icon-cell" style="width: 5%;"><a href="files/[NAPI 2022] Application Package.zip"><i class="fa fa-file-zip-o"></i></a></div>
     </div>
 
@@ -311,7 +92,8 @@ a.navb-item:hover{
       <div class="num-cell" style="width: 5%;"></div>
       <div class="num-cell sub-step-bg" style="width: 5%; color:#4C6989">☐</div>
       <div class="detail-cell-alt sub-step-bg">
-          <a href="files/[NAPI 2022] Application Form.zip" class="appform-file-link">Application Form</a>
+          <a href="files/[NAPI 2022] Application Form.zip" class="appform-file-link">Application Form <i class="fa fa-download"></i></a>
+          <br/>
           [<i>not compatible with Preview of macOS</i>]
       </div>
       <div class="icon-cell sub-step-bg" style="width: 5%;"><a class="file-icon" href="files/[NAPI 2022] Application Form.pdf" target="_blank"><i class="fa fa-file"></i></a></div>
@@ -329,7 +111,7 @@ a.navb-item:hover{
       <div class="num-cell" style="width: 5%;"></div>
       <div class="num-cell sub-step-bg" style="width: 5%; color:#4C6989">☐</div>
       <div class="detail-cell-alt sub-step-bg">
-          <a class="appform-file-link" href="files/[NAPI 2022] Curriculum Vitae.docx">CV Template</a>
+          <a class="appform-file-link" href="files/[NAPI 2022] Curriculum Vitae.docx">CV Template <i class="fa fa-download"></i></a>
       </div>
       <div class="icon-cell sub-step-bg" style="width: 5%;"><a class="file-icon" href="files/[NAPI 2022] Curriculum Vitae.docx"><i class="fa fa-file"></i></a></div>
     </div>
@@ -362,16 +144,14 @@ a.navb-item:hover{
 	</div> <!-- container -->
 </div>
 
-<div style="position:relative;background-color:#4C6989;" class="container-napi">
-  <div style="color:#273747;padding:40px 0 20px 0;text-align: left;">
-
-
+<div class="container-napi container-footer">
+  <div class="footer-content">
   <p> NAIST PROJECT FOR INTERNS 2022<br/>
   
   8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
   Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
   © NAPI 2022, All Rights Reserved.</p>
-
+  </div>
 </div>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->

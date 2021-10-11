@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -23,270 +21,23 @@
 
     <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
   <script type="text/javascript">
    $(function() {
     var images = ['home.jpg', 'home2.jpg'];
     $('.bgimg-1').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
    });
   </script>
-
-<style>
-body, html {
-  height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #D4BB83;
-  background-color:#273747
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 .bgimg-4 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-1 {
-  background-image: url("home.jpg");
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image:  
-  	/*linear-gradient(
-      rgba(214,230,243, 0.45), 
-      rgba(214,230,243, 0.45)
-    ),*/
-  	url("home_about.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("contact.jpg");
-  min-height: 400px;
-}
-
-.main-caption {
-  display: table;
-  text-align: left;
-  padding-top: 25vh;
-  height: 100%;
-  width:100%;
-}
-
-.main-caption span.border {
-  display: inline-block;
-  /*background-color: #111;
-  color: #fff;
-  font-size: 3vh;*/
-  color: #273747;
-  font-size: 5vh;
-  padding: 10px;
-  /*letter-spacing: 10px;*/
-  margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
-}
-
-.main-caption a.border-button {
-  display: inline-block;
-  border: 3px solid #4C6989;
-  background-color: #273747;
-  padding: 10px;
-  font-size: 3vh;
-  /*letter-spacing: 10px;*/
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-.main-caption a.border-button:hover {
-  background-color: #D4BB83;
-  color: #273747;
-  border: 3px solid #273747;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  color: #273747;
-}
-
-.caption span.border {
-  display: inline-block;
-  background-color: #273747;
-  color: #C38A19;
-  /*font-size: 3vh;*/
-  /*color: #C38A19;*/
-  font-size: 7vmin;
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-}
-
-a {
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a:visited{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-a.question-link:hover{
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a.e-mail{
-  color:#C38A19;
-}
-
-a.e-mail:hover{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a.e-mail-b{
-  color:#C38A19;
-}
-
-a.e-mail-b:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-
-h3 {
-  /*letter-spacing: 2px;*/
-  /*text-transform: uppercase;*/
-  font-weight: bold;
-  color: #c38a19;
-  font-family: 'Playfair Display', serif;
-}
-
-a.navb-brand {
-  color: #c38a19;
-  font-weight: bold;
-}
-
-a.navb-brand:hover {
-  color: #D4BB83;
-  font-weight: bold;
-}
-
-.navb-item {
-  color: #C38A19;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item{
-  color: #c38a19;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item:hover{
-  color: #D4BB83;
-}
-
-.container-napi {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.container-napi a.button {
-  display: inline-block;
-  border: 3px solid #273747;
-  padding: 18px;
-  font-size: 3vh;
-  /*letter-spacing: 10px;*/
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  color: #273747;
-  text-decoration: none;
-  background-color: #D4BB83;
-}
-
-.container-napi a.button:hover {
-  background-color: #4C6989;
-  color: #D4BB83;
-}
-
-.container-napi a.icon-button {
-  display: inline-block;
-  padding: 10px;
-  font-size: 3vh;
-  /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
-  color: #273747;
-  text-decoration: none;
-}
-
-.container-napi a.icon-button:hover {
-  background-color: #4C6989;
-  color: #c38a19;
-}
-
-.container-napi-nav {
-  padding-left: 0vw;
-  padding-right: 0vw;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-        background-attachment: scroll;
-    }
-}
-
-@media (min-aspect-ratio: 3/1) {
-  .caption span.border {
-    font-size: 5vmin;
-  }
-}
-
-.animate-fading{
-	animation:fading 10s infinite;
-	animation-timing-function: ease-in-out;
-}
-
-@keyframes fading{
-  0% {
-    opacity:0;
-  }
-  50% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-</style>
 </head>
+
 <body>
-  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
+  <div class="container-napi-nav">
     <!--<nav class="navbar navbar-toggleable-md" style="background: transparent; padding: 0.5rem 0;">-->
-    <nav class="navbar navbar-toggleable-md" style="background: #273747; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #4C6989; color:#4C6989;
-">
+    <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent">
           <span class="fa fa-bars"></span>
         </button>
 
@@ -327,8 +78,6 @@ a.navb-item:hover{
     </div>
   </div>
 </div>
-
-
 <div class="container-napi">
   <div style="color: #D4BB83;background-color:#273747;padding:50px 0 50px 0;">
     <h3 style="text-align:center;font-weight: bold;">WELCOME!</h3>
@@ -347,7 +96,6 @@ a.navb-item:hover{
     <span class="border">About</span>
   </div>
 </div>
-
 <div style="position:relative;" class="container-napi">
   <div style="color:#D4BB83;background-color:#273747;padding:40px 0 50px 0;text-align: left;">
 
@@ -367,20 +115,14 @@ a.navb-item:hover{
 
   </div>
 </div>
-
-
-
-
-<div style="position:relative;background-color:#4C6989;" class="container-napi">
-  <div style="color:#273747;padding:40px 0 20px 0;text-align: left;">
-
-
+<div class="container-napi container-footer">
+  <div class="footer-content">
   <p> NAIST PROJECT FOR INTERNS 2022<br/>
   
   8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
   Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
   © NAPI 2022, All Rights Reserved.</p>
-
+  </div>
 </div>
 
 

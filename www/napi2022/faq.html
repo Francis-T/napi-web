@@ -18,209 +18,16 @@
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/side-pages.css" rel="stylesheet">
+  <link href="css/faqs.css" rel="stylesheet">
 </head>
-
-<style>
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #273747;
-  background-color:#CCCEC3
-}
-
-.bgimg-2 {
-  background-image:  
-  	/*linear-gradient(
-      rgba(214,230,243, 0.45), 
-      rgba(214,230,243, 0.45)
-    ),*/
-  	url("contact.jpg");
-  min-height: 400px;
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-caption {
-  display: table;
-  text-align: center;
-  padding-top: 18vh;
-  height: 100%;
-  width: 100%;
-}
-
-.main-caption span.border {
-  display: inline-block;
-  background-color: #273747;
-  color: #C38A19;
-  /*font-size: 3vh;*/
-  /*color: #C38A19;*/
-  font-size: 7vmin;
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /*letter-spacing: 10px;*/
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #D4BB83;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-  font-family: 'Playfair Display', serif;
-}
-
-#faq-accordion .faq-card {
-  margin-bottom: 20px;
-}
-
-.faq-card .faq-header {
-  display: table;
-  width: 100%;
-  background-color:#D4BB83
-}
-
-.faq-header .question-cell {
-  display: table-cell;
-  width: 95%;
-}
-
-.faq-header .question-link {
-  display: block;
-  text-decoration: none;
-  text-align: left;
-  font-weight: bold;
-  color: #273747
-}
-
-.faq-header .arrow-cell {
-  display: table-cell;
-  width: 5%;
-}
-
-.faq-header .arrow-link {
-  display: block;
-  text-decoration: none;
-  text-align: right;
-}
-
-a {
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a:visited{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-a.question-link:hover{
-  color: #C38A19;
-  text-decoration: none;
-}
-
-a.e-mail{
-  color:#C38A19;
-}
-
-a.e-mail:hover{
-  color: #4C6989;
-  text-decoration: none;
-}
-
-a.e-mail-b{
-  color:#C38A19;
-}
-
-a.e-mail-b:hover{
-  color: #D4BB83;
-  text-decoration: none;
-}
-
-h3 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #4C6989;
-  font-family: 'Playfair Display', serif;
-}
-
-a.navb-brand {
-  color: #273747;
-  font-weight: bold;
-}
-
-a.navb-brand:hover {
-  color: #C38A19;
-  font-weight: bold;
-}
-
-.navb-item {
-  color: #C38A19;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item{
-  color: #273747;
-  font-weight: bold;
-  text-align: right;
-}
-
-a.navb-item:hover{
-  color: #C38A19;
-}
-
-.container-napi {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.container-napi-nav {
-  padding-left: 0vw;
-  padding-right: 0vw;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-
-@media (min-aspect-ratio: 3/1) {
-  .main-caption span.border {
-    font-size: 5vmin;
-  }
-}
-
-</style>
-
-
 <body>
-  <div class="container-napi-nav" style="width: 100%; position: absolute; z-index: 1;">
-   <nav class="navbar navbar-toggleable-md" style="background: #CCCEC3; padding: 0.5rem 0; padding-left:5vw; padding-right:5vw;">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" style="border: 1px solid #4C6989; color:#4C6989;
-">
+  <div class="container-napi-nav">
+   <nav class="navbar navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="fa fa-bars"></span>
       </button>
       <a class="navbar-brand navb-brand" href="index.html">NAIST Project for Interns 2022</a>
@@ -239,14 +46,14 @@ a.navb-item:hover{
 <div class="bgimg-2">
   <div class="container-napi" style="width: 100%;">
   <div class="main-caption">
-      <div style="display: table-row; text-align: center;">
+      <div class="caption">
         <span class="border">Frequently Asked Questions</span>
       </div>
   </div>
   </div>
 </div>
 
-<div style="color: #273747;background-color:#CCCEC3;text-align:center;padding:50px 0px;text-align: justify;">
+<div class="section-content">
   <div class = "container-napi">
 		<div id="faq-accordion" role="tablist">
       <div class="card faq-card">
@@ -415,16 +222,14 @@ a.navb-item:hover{
 	</div> <!-- container -->
 </div>
 
-<div style="position:relative;background-color:#4C6989;" class="container-napi">
-  <div style="color:#273747;padding:40px 0 20px 0;text-align: left;">
-
-
+<div class="container-napi container-footer">
+  <div class="footer-content">
   <p> NAIST PROJECT FOR INTERNS 2022<br/>
   
   8916-5 Takayama-cho, Ikoma, Nara 630-0192, JAPAN<br/>
   Contact us at: <a class="e-mail-b" href="mailto:napi@is.naist.jp" target="_blank">napi[@]is.naist.jp</a><br/>
   © NAPI 2022, All Rights Reserved.</p>
-
+  </div>
 </div>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #486591;
+  background-color:#CCCEC3
+}
+
+.main-caption {
+  text-align: center;
+}
+
+.main-caption span.border {
+  display: inline-block;
+  background-color: #273747;
+  color: #C38A19;
+  /*font-size: 3vh;*/
+  /*color: #C38A19;*/
+  font-size: 7vmin;
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*letter-spacing: 10px;*/
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+#faq-accordion .faq-card {
+  margin-bottom: 20px;
+}
+
+.faq-card .faq-header {
+  display: table;
+  width: 100%;
+  background-color:#D4BB83
+}
+
+.faq-header .question-cell {
+  display: table-cell;
+  width: 95%;
+}
+
+.faq-header .question-link {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  color: #486591
+}
+
+.faq-header .arrow-cell {
+  display: table-cell;
+  width: 5%;
+}
+
+.faq-header .arrow-link {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+}
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.custom-text-large {
+   font-size: 110%;
+   text-align: left;
+}
+
+.custom-col-lab-name {
+   min-width: 250px;
+}
+
+table.table-hover tbody tr:hover {
+  background-color: #D4BB83;
+}
+
+table.table-hover a.file-icon:hover{
+  color: #4C6989;
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4C6989;
+  font-family: 'Playfair Display', serif;
+}
+
+a.navb-brand {
+  color: #486591;
+  font-weight: bold;
+}
+
+a.navb-brand:hover {
+  color: #C38A19;
+  font-weight: bold;
+}
+
+.navb-item {
+  color: #C38A19;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item{
+  color: #486591;
+  font-weight: bold;
+  text-align: right;
+}
+
+a.navb-item:hover{
+  color: #C38A19;
+}
+
+a.no-decor {
+  text-decoration: none;
+  color:#C38A19;
+}
+
+a.no-decor:hover{
+  color: #D4BB83;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #CCCEC3; 
+}
+
+.section-content {
+  color: #486591;
+  background-color:#CCCEC3;
+  text-align:center;
+  padding:50px 0px;
+  text-align: justify;
+}
+
+.caption {
+  text-align: center;
+  display: table-row;
+}
+
+

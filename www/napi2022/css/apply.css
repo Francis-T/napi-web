@@ -1,0 +1,97 @@
+.bgimg-2 {
+  background-image:  
+  	/*linear-gradient(
+      rgba(214,230,243, 0.45), 
+      rgba(214,230,243, 0.45)
+    ),*/
+  	url("../apply.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doc-table {
+  display: table;
+  width: 100%;
+}
+
+.step-header {
+  display: table;
+  width: 100%;
+  /*font-weight: bold;*/
+  color: #000000;
+}
+
+.step-header > .num-cell, .detail-cell, .icon-cell {
+  display: table-cell;
+}
+
+.num-cell {
+  text-align: left;
+  color: #C38A19;
+
+  /* Top-left, top-right, bottom-right, bottom-left */
+  border-radius: calc(0.25rem - 1px) 0 0 calc(0.25rem - 1px);
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 0 0.75rem 1.25rem;
+}
+
+.detail-cell {
+  text-align: left;
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 0 0.75rem 0;
+  color: #D4BB83;
+}
+
+.detail-cell-alt {
+  text-align: left;
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 0 0.75rem 0;
+  color: #486591;
+}
+
+.icon-cell {
+  text-align: right;
+
+  /* Top-left, top-right, bottom-right, bottom-left */
+  border-radius: 0 calc(0.25rem - 1px) calc(0.25rem - 1px) 0;
+
+  /* Top, right, bottom, left */
+  padding: 0.75rem 1.25rem 0.75rem 0;
+}
+
+.icon-cell a.file-icon{
+  color: #C38A19;
+}
+
+.icon-cell a.file-icon:hover{
+  color: #4C6989;
+}
+
+.disabled-file-icon{
+  color: #666666;
+}
+
+.detail-cell-alt a.appform-file-link {
+  color: #C38A19;
+  font-weight: bold;
+}
+
+.detail-cell-alt a.appform-file-link:hover {
+  color: #4C6989;
+}
+
+.main-step-bg {
+  background-color: #4C6989;
+}
+
+.sub-step-bg {
+  background-color: #D4BB83;
+}
+
