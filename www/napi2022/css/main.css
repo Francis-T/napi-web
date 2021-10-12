@@ -56,7 +56,7 @@ body, html {
   display: inline-block;
   border: 3px solid #FFF;
   border-radius: 15px;
-  background-color: #313131;
+  background-color: #313131BB;
   padding: 10px;
   font-size: 3vh;
   /*letter-spacing: 10px;*/
@@ -66,9 +66,11 @@ body, html {
 }
 
 .main-caption a.border-button:hover {
-  background-color: #21B2C7;
-  color: #FFF;
-  border: 3px solid #FFF;
+  /*background-color: #21B2C7;*/
+  background-color: #313131FF;
+  /*color: #FFF;*/
+  color: #D4BB83;
+  border: 3px solid #D4BB83;
 }
 
 .caption {
@@ -164,6 +166,7 @@ a.navb-item:hover{
 .container-napi a.icon-button:hover {
   background-color: #31313166;
   color: #D4BB83;
+  border: 2px solid #D4BB83;
 }
 
 .navbar {
@@ -197,6 +200,7 @@ a.e-mail {
 
 a.e-mail:hover{
   color: #D4BB83;
+  border: 2px solid #D4BB83;
 }
 
 @media (max-width: 500px) {
