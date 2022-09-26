@@ -1,0 +1,63 @@
+.bgimg-2 {
+  background-image:  
+  	/*linear-gradient(
+      rgba(214,230,243, 0.45), 
+      rgba(214,230,243, 0.45)
+    ),*/
+  	url("../labs.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.custom-text-large {
+   font-size: 110%;
+   text-align: left;
+}
+
+.custom-col-lab-name {
+   min-width: 250px;
+}
+
+table.table-hover tbody tr:hover {
+  background-color: #F6DDA5;
+}
+
+table.table-hover a.file-icon:hover{
+  color: #4C6989;
+}
+
+.disabled-file-icon{
+  color: #666666;
+}
+
+a.no-decor {
+  text-decoration: none;
+  color:#C38A19;
+}
+
+a.no-decor:hover{
+  color: #D4BB83;
+  text-decoration: none;
+}
+
+@media (min-width:768px) {
+    .affix-top {
+      /* navbar style at top */
+      background:transparent;
+      border-color:transparent;
+      padding: 15px;
+      -webkit-transition:all 0.5s ease;
+      -moz-transition:all 0.5s ease; 
+      -o-transition:all 0.5s ease;         
+      transition:all 0.5s ease;  
+    }
+}
+
